@@ -8,10 +8,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
     title: `zino's devlog`,
     tagline: "Dinosaurs are cool",
-    url: "https://your-docusaurus-test-site.com",
+    url: "https://zino-devlog-ge967y4ua-zinozino1.vercel.app/",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
+    onDuplicateRoutes: "throw",
     favicon: "img/favicon.ico",
 
     // GitHub pages deployment config.
@@ -33,14 +34,13 @@ const config = {
                 redirects: [
                     // /docs/oldDoc -> /docs/newDoc
                     {
-                        to: "/",
-                        from: "/docs/intro",
+                        from: "/",
+                        to: "/docs/intro",
                     },
                 ],
             },
         ],
     ],
-
     presets: [
         [
             "classic",
@@ -50,6 +50,7 @@ const config = {
                     sidebarPath: require.resolve("./sidebars.js"),
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
+                    // routeBasePath: "/",
                     editUrl:
                         "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
                 },
