@@ -53,6 +53,7 @@ const config = {
                     // routeBasePath: "/",
                     editUrl:
                         "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+                    sidebarCollapsed: false, // 펼쳐져있는 것이 default로(기본상태)
                 },
                 blog: {
                     showReadingTime: true,
@@ -71,6 +72,12 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            docs: {
+                sidebar: {
+                    autoCollapseCategories: false,
+                },
+            },
+
             navbar: {
                 title: "zino's devlog",
                 logo: {
