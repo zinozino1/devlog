@@ -72,12 +72,9 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            docs: {
-                sidebar: {
-                    autoCollapseCategories: false,
-                },
+            colorMode: {
+                defaultMode: "dark",
             },
-
             navbar: {
                 title: "zino's devlog",
                 logo: {
@@ -107,28 +104,12 @@ const config = {
                         title: "Docs",
                         items: [
                             {
-                                label: "Tutorial",
+                                label: "Intro",
                                 to: "/docs/intro",
                             },
                         ],
                     },
-                    {
-                        title: "Community",
-                        items: [
-                            {
-                                label: "Stack Overflow",
-                                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-                            },
-                            {
-                                label: "Discord",
-                                href: "https://discordapp.com/invite/docusaurus",
-                            },
-                            {
-                                label: "Twitter",
-                                href: "https://twitter.com/docusaurus",
-                            },
-                        ],
-                    },
+
                     {
                         title: "More",
                         items: [
@@ -143,7 +124,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} zino's. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} zino's. Built with Docusaurus 2`,
             },
             prism: {
                 theme: lightCodeTheme,
